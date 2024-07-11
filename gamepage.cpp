@@ -78,7 +78,8 @@ void GamePage::changeState(int x, int y, QString state)
     }
     // آزاد کردن خوونه
     else if (state == "change normal") {
-        button->setText("🆓");
+        if (button->text() == "🔒") { }
+        else {button->setText("🆓");}
     }
 
 }
